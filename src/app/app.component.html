@@ -1,0 +1,36 @@
+<div class="navbar navbar-default navbar-fixed-top" ng-controller="NavCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/welcome">Find my country</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive= "active"><a routerLink="/login">Login</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive= "active"><a routerLink="/favorites">Favorites</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li routerLinkActive= "active"><a routerLink="/countryHome">Home</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</div>
+
+<!-- Router Outlet -->
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="navbar navbar-default navbar-fixed-bottom">
+  <h5 class="p-10">
+    <span>AJ Projects © 2018.All rights reserved.</span>
+    <span class="pull-right">Terms & Conditions</span>
+  </h5>
+</div> -->
